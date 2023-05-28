@@ -1,4 +1,4 @@
-window.promises = [];
+window.promises = [prom1, prom2, prom3, prom4, prom5];
 
 
 const id = document.getElementById("output");
