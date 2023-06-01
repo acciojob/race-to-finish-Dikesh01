@@ -1,7 +1,8 @@
-window.promises = [prom1, prom2, prom3, prom4, prom5];
+// window.promises = [prom1, prom2, prom3, prom4, prom5];
 
 
-const id = document.getElementById("output");
+const id = document.getElementById("output")
+
 
 let prom1 = new Promise((resolve,reject) =>{
   setTimeout(() =>{
@@ -34,17 +35,11 @@ let x = Promise.any([prom1, prom2, prom3, prom4, prom5])
 
 x.then((data) =>{
 
-  console.log(data);//
-  id.innerText = data
+  // console.log(data);
+  id.innerText = data;
 
 });
 
 x.catch((error) =>{
-  console.log("error :", SyntaxError)
+  console.log("error :", error)
 });
-
-
-
-
-// Do not change the code above this
-// add your promises to the array `promises`
