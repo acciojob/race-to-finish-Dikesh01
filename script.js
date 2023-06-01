@@ -31,6 +31,7 @@ let prom5 = new Promise((resolve,reject) =>{
   },5000)
 });
 
+window.promises = [prom1, prom2, prom3, prom4, prom5];
 let x = Promise.any([prom1, prom2, prom3, prom4, prom5])
 
 x.then((data) =>{
